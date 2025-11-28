@@ -1,0 +1,26 @@
+import java.util.*;
+public class ReverseArray {
+
+	public static void main(String[] args) {
+		int [] arr= {2,4,6,8,10};
+        reverse(arr);
+        System.out.print(Arrays.toString(arr));
+        //System.out.println (totalpair);
+        
+	}
+	static void reverse(int [] arr) {
+		int start=0;
+		int end=arr.length-1;
+	 //for(int i=0;i<arr.length;i++) {
+	 while(start<end) {
+		 int temp=arr[end];
+		 arr[end]=arr[start];
+		 arr[start]=temp;
+		 start++;
+		 end--;
+		
+	 }
+	 
+	// System.out.print(Arrays.toString(arr));
+	}
+}

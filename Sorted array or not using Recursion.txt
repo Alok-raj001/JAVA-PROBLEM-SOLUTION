@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main { 
+public static boolean isSorted(int[] arr, int i) {
+	if(i==arr.length-1) {
+
+		return true;
+	//	System.out.println("Element not found in the given array,Please write the correct data");
+	}
+	if(arr[i]>arr[i+1]){
+		return false;
+	}
+	//if(arr[i]<arr[i+1]) 
+		return isSorted(arr,i+1);
+	
+}
+
+
+	public static void main(String [] args) {
+		// TODO Auto-generated method stub
+   int  [] arr= {2,5,7,8,9,10};
+   
+ System.out.println(isSorted(arr,0));
+}
+
+}

@@ -1,0 +1,27 @@
+//Take an array as input from the user .Search for the given number x and print the index at which it occur
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter the size of an array");
+	    int size=sc.nextInt();
+	    int [] arr = new int[size];
+	    for (int i=0;i<size;i++){
+	        System.out.println("Enter the " + i + " elements of the array");
+	        arr[i]=sc.nextInt();}
+	        System.out.println("Enter the number which we have to find");
+	        int x=sc.nextInt();
+	         for (int i=0;i<arr.length;i++){
+	        if(arr[i]==x){
+	            System.out.println(x + " found at intex number " + i );
+	       
+	        }
+	 
+	           
+	        }
+	    }
+	    
+	   
+	}
