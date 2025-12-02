@@ -27,3 +27,4 @@ public class StringEx6 {
 		System.out.println(s1.equalsIgnoreCase(s2));
 	}
 }
+
