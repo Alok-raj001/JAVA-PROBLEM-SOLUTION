@@ -22,4 +22,5 @@ public class SearchInRange {
         // hence the target not found
         return -1;
     }
+
 }
